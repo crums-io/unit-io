@@ -1,0 +1,6 @@
+# Ignoring all hidden files for now..
+#
+.*
+target/
+
+
