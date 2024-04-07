@@ -1,5 +1,6 @@
-module io.crums.test {
+
+module io.crums.testing {
   
-  exports io.crums.test;
+  exports io.crums.testing;
   
 }
