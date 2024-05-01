@@ -3,7 +3,7 @@
   
   <groupId>io.crums</groupId>
   <artifactId>unit-io</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <packaging>jar</packaging>
   
   
@@ -12,7 +12,7 @@
   
   
   <description>
-  Support of repeatable tests that need to interact with the file system.
+  Support for repeatable tests that need to interact with the file system.
   Artifact intended for scope *test*.
   </description>
 

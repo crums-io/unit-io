@@ -36,6 +36,25 @@ public class IoTestCase extends SelfAwareTestCase {
   }
   
   
+  
+  /**
+   * Returns the path to a newly created method run directory.
+   * 
+   * @param innerMethodObject
+   *        an instance of an anonymous type declared in the body of the test method
+   *        
+   * @return a newly created directory
+   */
+  public File newMethodRunDir(Object innerMethodObject) {
+    File runDir = getMethodOutputFilepath(innerMethodObject);
+    if (!runDir.mkdirs())
+      throw new IllegalStateException(
+          "failed to create test run-directory " + runDir);
+    
+    return runDir;
+  }
+  
+  
   /**
    * Careful, returns the same directory across invocations.
    * 
